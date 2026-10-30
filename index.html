@@ -170,7 +170,7 @@
             filter: drop-shadow(0 10px 30px rgba(0,0,0,0.3));
         }
         .plane-group svg {
-            transform: rotate(-10deg);
+            transform: rotate(-8deg) perspective(600px) rotateY(-15deg) rotateX(5deg);
         }
         @keyframes flyAcross {
             0%   { transform: translate(0, 30px); }
@@ -921,10 +921,11 @@
         <div class="nav-inner">
             <a href="#hero" class="nav-monogram">C &amp; N</a>
             <ul class="nav-links">
-                <li><a href="#story">Our Story</a></li>
+                <!-- Hidden until full site launch -->
+                <!-- <li><a href="#story">Our Story</a></li>
                 <li><a href="#venue">The Weekend</a></li>
                 <li><a href="#details">Details</a></li>
-                <li><a href="#rsvp">RSVP</a></li>
+                <li><a href="#rsvp">RSVP</a></li> -->
             </ul>
         </div>
     </nav>
@@ -978,10 +979,9 @@
                 <!-- Belly -->
                 <path d="M78 92 L490 80 Q500 88, 490 92 L95 102 Q78 100, 78 92 Z" fill="#B5B5BA" opacity="0.35"/>
 
-                <!-- === RED TAIL — connected smoothly to fuselage === -->
-                <path d="M48 80 L48 75 Q48 60, 55 55 L78 55 L78 58 L60 58 L44 28 L52 22 L82 22 L88 42 L78 55" fill="url(#planeGrad)"/>
-                <path d="M44 28 L52 22 L82 22 L88 42 L78 55 L60 58 Z" fill="#D41F26"/>
-                <path d="M52 22 L44 28 L60 58 L65 55" fill="#B01820" opacity="0.4"/>
+                <!-- === RED TAIL FIN — shark fin shape === -->
+                <path d="M78 55 L72 12 L48 80 Z" fill="#D41F26"/>
+                <path d="M78 55 L72 12 L75 12 L78 50 Z" fill="#F04050" opacity="0.2"/>
                 <!-- Tail horizontal stabilizers -->
                 <path d="M38 70 L12 56 L12 60 L38 74 Z" fill="#DDDDE0" stroke="#C5C5C5" stroke-width="0.3"/>
                 <path d="M38 90 L12 100 L12 96 L38 86 Z" fill="#DDDDE0" stroke="#C5C5C5" stroke-width="0.3"/>
@@ -1116,6 +1116,18 @@
             </div>
             <div class="scroll-indicator"><span>Scroll</span><div class="scroll-arrow"></div></div>
         </section>
+
+        <!-- COMING SOON message -->
+        <section class="section" style="text-align: center; padding: 5rem 2rem; background: var(--ivory);">
+            <p class="section-label">Stay Tuned</p>
+            <h2 class="section-heading">More Details Coming Soon</h2>
+            <p class="section-text">We can't wait to share everything with you.<br>Keep an eye out for the full invitation.</p>
+        </section>
+
+        <!-- ============================================
+             HIDDEN FOR NOW — remove .coming-soon-hide to reveal
+             ============================================ -->
+        <div class="coming-soon-hide" style="display: none;">
 
         <!-- VENUE HERO -->
         <section class="hero" id="hero">
@@ -1301,6 +1313,8 @@
                 </div>
             </div>
         </section>
+
+        </div><!-- end coming-soon-hide -->
 
         <!-- FOOTER -->
         <footer class="site-footer">
