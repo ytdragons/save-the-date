@@ -1,6 +1,6 @@
 # Chantelle & Nicholas - save the date
 
-Build: `save-the-date-final-2026-10-30` (in a `<meta name="build">` tag in index.html).
+Build: `save-the-date-final-2026-10-30-cal3` (in a `<meta name="build">` tag in index.html).
 If that string isn't in index.html, this is the wrong copy.
 
 One page. A plane crosses with the two of us in the doorway, Chantelle
@@ -11,6 +11,7 @@ with the date. Nothing else.
 index.html          the whole thing
 fonts/              Bodoni Moda + Jost, self-hosted (OFL licence)
 images/og.jpg       the preview image when the link is shared
+chantelle-and-nicholas.ics   the calendar event (Apple / Other)
 .nojekyll           tells GitHub Pages to serve files as-is
 ```
 
@@ -44,3 +45,4 @@ All in `index.html`, inside `<article class="iv-final__card">`:
 | Date | the three `<div class="fw">` blocks - the `<i>` is the value each window lands on; the `<b>` values before it are what it flicks through on the way |
 | Day of week | `<p class="iv-final__dow">` |
 | The note | `<p class="iv-final__note">` |
+| Calendar event | `chantelle-and-nicholas.ics`, and the same event in `ICS` / `EV` in the script - change both |
